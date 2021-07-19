@@ -8,8 +8,6 @@ PyMathlib is a librairie of vectorial and matricial manipulations. This librairi
 
 There is two file : `vecmat.py` is the complete librairie for computer and `vecmat_nw.py` is the same librairie but without some functions like `solve`. This lighter version is specially design for the Numworks calculators but you can execute it on other calculators like Casio Graph 90+E or Graph 35+E II.
 
-Version 1.5.1 released on 13rd of september 2020.
-
 ### Licence
 
 This code was provided with licence GNU General Public Licence v3.0
@@ -77,6 +75,21 @@ The matrices supports basic operation, `+` and `-` for addition/substraction bet
  - `Matrix.ref()` : Returns the row echelon form of the matrix. (Calculate by the Gauss-Jordan elimination.)
  - `Matrix.rref()` : Returns the reduced row echelon form
  - `Matrix.solve(*solution)` : Solves the linear system describe by Matrix. [Exemple](https://github.com/Shadow15510/PyMathlib#Linear-system-solver)
+
+## Polynoms manipulations
+
+### Generalities
+
+As for Vectors and Matrix, Polynoms was made with OOP. This object support the addition, substraction, and can be print on screen.
+
+### Basic manipulations
+
+You can evaluate a polynom on a value by simply call them. Please see : [Exemple]()
+
+### Advanced manipulations
+
+`Polynom.derivative()` : Returns the derivative of the polynom.
+
 ## Other manipulations
 
 ### Generalities
@@ -114,3 +127,18 @@ Here, 0 and 10 are the equations's solutions. In this case, the solver returns :
 `[2.0, -4.0]`
 
 So now, we know that the system's solutions are x = 2 and y = -4.
+
+### Polynom
+
+#### Evaluation
+
+We can create a Polynom object :
+
+`>>> P = Polynom(1, 2, 3)`
+
+And to evaluate it on a value (for exemple, 0) : 
+
+```
+>>> P(0)
+1
+```
