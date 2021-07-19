@@ -10,6 +10,7 @@ name: PyMathlib
 
 on:
   release: 1.0.0
+  types: [published]
 
 jobs:
   deploy:
