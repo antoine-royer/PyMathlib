@@ -6,8 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: PyMathlib
-
+name: Upload Python Package
 on:
   release: 1.0.0
   types: [published]
